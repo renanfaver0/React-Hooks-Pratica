@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 function App() {
-  
-  const [tarefas, setTarefas] = useState(['Estudar PHP', 'Estudar React Hooks']);
-  
+
+  const [tarefas, setTarefas] = useState(['Estudar', 'Estudar React Hooks']);
+
   const [input, setInput] = useState('');
 
   function handleAdd() {
@@ -19,8 +19,8 @@ function App() {
           <li key={tarefa}>{tarefa}</li>
         ))}
       </ul>
-           <input type="text" value={input} onChange={(e) => setInput(e.target.value)}/>
-          <button type="button" onClick={handleAdd}>Adicionar</button>
+      <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
+      <button type="button" onClick={handleAdd}>Adicionar</button>
 
     </div>
   );
